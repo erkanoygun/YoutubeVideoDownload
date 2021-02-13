@@ -2,11 +2,8 @@ from MainWindow import Ui_MainWindow
 from PyQt5 import QtWidgets
 import sys
 from pytube import YouTube
-import time
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtCore import QThread, pyqtSignal
-import tempfile
-import subprocess
 import os
 
 class CloneThread(QThread):
