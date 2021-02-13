@@ -21,14 +21,8 @@ class CloneThread(QThread):
         self.d_video = ''
 
     def run(self):
-
-        # print(self.secim)
-        # tmpdir = 'c:\\'
-        # self.yt = YouTube(self.url)
-        #self.yt.streams.get_highest_resolution().download()
-        #print("indirme işlemi bitti")
         # self.finished.emit(tmpdir)
-        # self.finished.emit()
+
 
 
         try:
@@ -127,7 +121,7 @@ class Window(QtWidgets.QMainWindow):
             QMessageBox.about(self, "M.Erkan OYGUN",
                               "Merhaba dostum benim hakkımda aramak istediklerini bana twitterdan dm atarak\nbizzat sorabilirsin, twitter kullanıcı adım: '@erkanoygun'  ")
         elif self.thread.url == "":
-            self.sayac +=1
+            self.sayac += 1
             if self.sayac != 3:
                 self.ui.info_lbl.setText(" Bilgilendirme: Lütfen Video URL Adresini Girin! ")
             else:
@@ -175,92 +169,6 @@ class Window(QtWidgets.QMainWindow):
                                  + "\n 'Yüksek Kalite' formatında indirmeyi dene...\n ")
         QMessageBox.about(self, "Ops Bir Sorun Oluştu Dostum",
                           "Sorunun Kaynağını Anlamak İçin Bilgilendirme Metnine Bak... ")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    # def videoindir1(self):
-    #     url = self.ui.link_line.text()
-    #     self.yt = YouTube(url)
-    #     print(self.ui.kalitesecim.currentIndex())
-    #
-    #     if self.ui.kalitesecim.currentIndex() == 0:
-    #         self.yt.streams.filter(res="1440p").first().download()
-    #         self.yt.streams.filter(only_audio="True").first().download()
-    #
-    #     elif self.ui.kalitesecim.currentIndex() == 1:
-    #         self.yt.streams.filter(res="1080").first().download()
-    #         self.yt.streams.filter(only_audio="True").first().download()
-    #
-    #     elif self.ui.kalitesecim.currentIndex() == 2:
-    #         self.yt.streams.get_highest_resolution().download()
-    #         print("video iniyor")
-    #
-    #     elif self.ui.kalitesecim.currentIndex() == 3:
-    #         self.yt.streams.first().download()
-    #
-    #     elif self.ui.kalitesecim.currentIndex() == 4:
-    #
-    #         #QMessageBox.about(self, "Video İndirme Başlatıldı", "Lütfen Video İndirildi Bilgisini Alıncaya Kadar Programda Herhangi Bir İşlem Yapmayın")
-    #         self.yt.streams.filter(only_audio="True").first().download()
-    #         #QMessageBox.about(self, "Video İndirildi", "Video İndirildi Hazır")
-    #         self.iki_pencere.close()
-    #
-    #
-    #
-    #
-    # def denemee(self):
-        # msgBox = QMessageBox(QMessageBox.Warning, "My title", "My text.", QMessageBox.NoButton)
-        # msgBox.show()
-        # time.sleep(10)
-        # msgBox.close()
-        # QMessageBox.about(self, "Video İndirildi", "Video İndirildi Hazır")
-
-
-
-
-
-
-
-
-
-
 
 
 
